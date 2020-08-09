@@ -63,6 +63,9 @@ namespace OrangeJuice.Models
 						Weight = 420.69M
 					}
 				);
+
+				// save new data
+				context.SaveChanges();
 			}
 		}
 	}
