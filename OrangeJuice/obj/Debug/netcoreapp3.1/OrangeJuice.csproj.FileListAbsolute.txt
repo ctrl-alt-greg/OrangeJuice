@@ -164,3 +164,10 @@ C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\bin\Debug\netc
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.csproj.CoreCompileInputs.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\Oranges\Create.cshtml.g.cs
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\Oranges\Delete.cshtml.g.cs
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\Oranges\Details.cshtml.g.cs
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\Oranges\Edit.cshtml.g.cs
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\Oranges\Index.cshtml.g.cs
