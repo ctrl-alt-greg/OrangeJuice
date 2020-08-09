@@ -12,8 +12,6 @@ C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\bin\Debug\netc
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.csprojAssemblyReference.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.AssemblyInfoInputs.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.AssemblyInfo.cs
-C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.csproj.CoreCompileInputs.cache
-C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.RazorAssemblyInfo.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.RazorAssemblyInfo.cs
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.TagHelpers.input.cache
