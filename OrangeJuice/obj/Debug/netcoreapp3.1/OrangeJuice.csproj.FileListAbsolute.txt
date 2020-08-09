@@ -35,3 +35,5 @@ C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netc
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.pdb
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.genruntimeconfig.cache
 C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\OrangeJuice.csproj.CopyComplete
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Index.cshtml.g.cs
+C:\Users\gregt\Desktop\5318008\bs with vs\OrangeJuice\OrangeJuice\obj\Debug\netcoreapp3.1\Razor\Views\HelloWorld\Welcome.cshtml.g.cs
