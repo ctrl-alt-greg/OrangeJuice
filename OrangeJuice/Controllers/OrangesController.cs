@@ -25,7 +25,7 @@ namespace OrangeJuice.Controllers
 			return View(await _context.Orange.ToListAsync());
 		}
 
-		// GET: Oranges/Details/5
+		// GET: Oranges/Details/id
 		public async Task<IActionResult> Details(int? id)
 		{
 			if (id == null)
@@ -66,7 +66,7 @@ namespace OrangeJuice.Controllers
 			return View(orange);
 		}
 
-		// GET: Oranges/Edit/5
+		// GET: Oranges/Edit/id
 		public async Task<IActionResult> Edit(int? id)
 		{
 			if (id == null)
@@ -82,7 +82,7 @@ namespace OrangeJuice.Controllers
 			return View(orange);
 		}
 
-		// POST: Oranges/Edit/5
+		// POST: Oranges/Edit/id
 		// To protect from overposting attacks, enable the specific properties you want to bind to, for 
 		// more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
 		[HttpPost]
@@ -117,7 +117,7 @@ namespace OrangeJuice.Controllers
 			return View(orange);
 		}
 
-		// GET: Oranges/Delete/5
+		// GET: Oranges/Delete/id
 		public async Task<IActionResult> Delete(int? id)
 		{
 			if (id == null)
@@ -135,7 +135,7 @@ namespace OrangeJuice.Controllers
 			return View(orange);
 		}
 
-		// POST: Oranges/Delete/5
+		// POST: Oranges/Delete/id
 		[HttpPost, ActionName("Delete")]
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> DeleteConfirmed(int id)
