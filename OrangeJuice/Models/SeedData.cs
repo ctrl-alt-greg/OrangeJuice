@@ -43,7 +43,7 @@ namespace OrangeJuice.Models
 					},
 					new Orange
 					{
-						Name = "Blind Guy McSqueezy",
+						Name = "Blind-Guy McSqueezy",
 						Farm = "Dunder-Mifflin Orange Farms",
 						HarvestDate = DateTime.Today,
 						Weight = 1.65M
