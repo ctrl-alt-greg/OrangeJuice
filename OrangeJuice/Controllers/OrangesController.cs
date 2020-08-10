@@ -20,7 +20,7 @@ namespace OrangeJuice.Controllers
 		}
 
 		// GET: Oranges
-		public async Task<IActionResult> Index(string farm, string searchString) 
+		public async Task<IActionResult> Index(string orangeFarm, string searchString) 
 		{
 			// Use LINQ to get list of genres.
 			IQueryable<string> farmQuery = from o in _context.Orange orderby o.Farm select o.Farm;
@@ -32,9 +32,9 @@ namespace OrangeJuice.Controllers
 				oranges = oranges.Where(o => o.Name.Contains(searchString));
 			}
 
-			if(!String.IsNullOrEmpty(farm))
+			if(!String.IsNullOrEmpty(orangeFarm))
 			{
-				oranges = oranges.Where(o => o.Farm == farm);
+				oranges = oranges.Where(o => o.Farm == orangeFarm);
 			}
 
 			var farmVM = new FarmViewModel
