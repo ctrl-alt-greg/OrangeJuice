@@ -25,48 +25,42 @@ namespace OrangeJuice.Models
 						Name = "O.G.O.J.",
 						Farm = "Happy Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 2.9M,
-						Juiciness = "Much juice"
+						Weight = 2.9M
 					},
 					new Orange
 					{
 						Name = "O.J. II",
 						Farm = "Happy Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 1.5M,
-						Juiciness = "Less juice"
+						Weight = 1.5M
 					},
 					new Orange
 					{
 						Name = "Orange the Third",
 						Farm = "Happy Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 0.8M,
-						Juiciness = "the JUICE"
+						Weight = 0.8M
 					},
 					new Orange
 					{
 						Name = "Blind-Guy McSqueezy",
 						Farm = "Dunder-Mifflin Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 1.65M,
-						Juiciness = "Well that depends how hard you squeeze"
+						Weight = 1.65M
 					},
 					new Orange
 					{
 						Name = "Mr. Ping",
 						Farm = "Dunder-Mifflin Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 2.85M,
-						Juiciness = "No juice before homework"
+						Weight = 2.85M
 					},
 					new Orange
 					{
 						Name = "Michael Klump",
 						Farm = "Dunder-Mifflin Orange Farms",
 						HarvestDate = DateTime.Today,
-						Weight = 420.69M,
-						Juiciness = "Oh, he's got JUICE!"
+						Weight = 420.69M
 					}
 				);
 
