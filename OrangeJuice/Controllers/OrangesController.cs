@@ -20,9 +20,16 @@ namespace OrangeJuice.Controllers
 		}
 
 		// GET: Oranges
-		public async Task<IActionResult> Index()
-		{
-			return View(await _context.Orange.ToListAsync());
+		public async Task<IActionResult> Index(string searchString) 
+	{
+			var oranges = from m in _context.Orange select m;
+
+			if(!String.IsNullOrEmpty(searchString))
+			{
+				oranges = oranges.Where(o => o.Name.Contains(searchString));
+			}
+
+			return View(await oranges.ToListAsync());
 		}
 
 		// GET: Oranges/Details/id
