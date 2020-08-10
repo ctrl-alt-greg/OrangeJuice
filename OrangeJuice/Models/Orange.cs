@@ -29,4 +29,12 @@ namespace OrangeJuice.Models
 		[Column(TypeName = "decimal(18, 2)")]
 		public decimal Weight { get; set; }
 	}
+
+	public class FarmViewModel
+	{
+		public List<Orange> Oranges { get; set; }
+		public SelectList Farms { get; set; }
+		public string OrangeFarm { get; set; }
+		public string SearchString { get; set; }
+	}
 }

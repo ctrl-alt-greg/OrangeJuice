@@ -1,10 +1,10 @@
-﻿@model IEnumerable<OrangeJuice.Models.Orange>
+﻿@model OrangeJuice.Models.FarmViewModel
 
 @{
     ViewData["Title"] = "OrANgeez";
 }
 
-<h1>Index</h1>
+<h1>ORanGeEZ</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -12,6 +12,10 @@
 
 <form asp-controller="Oranges" asp-action="Index" method="get">
 	<p>
+		<select asp-for="Farms" asp-items="Model.Farms">
+			<option value="">All</option>
+		</select>
+
 		Title: <input type="text" name="SearchString">
 		<input type="submit" value="Search" />
 	</p>
@@ -21,22 +25,22 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.Oranges[0].Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Farm)
+                @Html.DisplayNameFor(model => model.Oranges[0].Farm)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.HarvestDate)
+                @Html.DisplayNameFor(model => model.Oranges[0].HarvestDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Weight)
+                @Html.DisplayNameFor(model => model.Oranges[0].Weight)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Oranges) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)

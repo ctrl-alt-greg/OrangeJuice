@@ -20,16 +20,30 @@ namespace OrangeJuice.Controllers
 		}
 
 		// GET: Oranges
-		public async Task<IActionResult> Index(string searchString) 
-	{
-			var oranges = from m in _context.Orange select m;
+		public async Task<IActionResult> Index(string farm, string searchString) 
+		{
+			// Use LINQ to get list of genres.
+			IQueryable<string> farmQuery = from o in _context.Orange orderby o.Farm select o.Farm;
+
+			var oranges = from o in _context.Orange select o;
 
 			if(!String.IsNullOrEmpty(searchString))
 			{
 				oranges = oranges.Where(o => o.Name.Contains(searchString));
 			}
 
-			return View(await oranges.ToListAsync());
+			if(!String.IsNullOrEmpty(farm))
+			{
+				oranges = oranges.Where(o => o.Farm == farm);
+			}
+
+			var farmVM = new FarmViewModel
+			{
+				Farms = new SelectList(await farmQuery.Distinct().ToListAsync()),
+				Oranges = await oranges.ToListAsync()
+			};
+
+			return View(farmVM);
 		}
 
 		// GET: Oranges/Details/id
