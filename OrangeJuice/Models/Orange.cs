@@ -71,8 +71,18 @@ namespace OrangeJuice.Models
 		 * <select name="OrangeFarm" asp-items="Model.Farms">
 		 * 
 		 * And it works without the OrangeFarm property in the FarmViewModel!
+		 * 
+		 * UPDATE: Added variable back and renamed  to SelectedFarm to make it more representative of
+		 * With the added line in OrangeController, the SelectedFarm attribute passes
+		 * the currently farm to the select list. For example, with "Happy Orange Farms" selected,
+		 * the generated HTML changes to:
+		 * 
+			<option value="">All</option>
+			<option>Dunder-Mifflin Orange Farms</option>
+			<option selected="selected">Happy Orange Farms</option>
 		 */
-		//public string OrangeFarm { get; set; }
+
+		public string SelectedFarm { get; set; }
 		//public string SearchString { get; set; }
 	}
 }

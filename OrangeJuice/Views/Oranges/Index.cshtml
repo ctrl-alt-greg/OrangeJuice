@@ -12,7 +12,7 @@
 
 <form asp-controller="Oranges" asp-action="Index" method="get">
 	<p>
-		<select name="OrangeFarm" asp-items="Model.Farms">
+		<select asp-for="SelectedFarm" asp-items="Model.Farms">
 			<option value="">All</option>
 		</select>
 

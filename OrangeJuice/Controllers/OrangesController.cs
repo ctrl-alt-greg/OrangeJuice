@@ -20,10 +20,14 @@ namespace OrangeJuice.Controllers
 		}
 
 		// GET: Oranges
-		public async Task<IActionResult> Index(string orangeFarm, string searchString) 
+		public async Task<IActionResult> Index(string selectedFarm, string searchString) 
 		{
-			// Use LINQ to get list of genres.
-			IQueryable<string> farmQuery = from o in _context.Orange orderby o.Farm select o.Farm;
+			// Use LINQ to get list of genres
+			// Delayed Query Execution
+			IQueryable<string> farmQuery = 
+				from o in _context.Orange 
+				orderby o.Farm 
+				select o.Farm;
 
 			var oranges = from o in _context.Orange select o;
 
@@ -32,15 +36,18 @@ namespace OrangeJuice.Controllers
 				oranges = oranges.Where(o => o.Name.Contains(searchString));
 			}
 
-			if(!String.IsNullOrEmpty(orangeFarm))
+			if(!String.IsNullOrEmpty(selectedFarm))
 			{
-				oranges = oranges.Where(o => o.Farm == orangeFarm);
+				oranges = oranges.Where(o => o.Farm == selectedFarm);
 			}
 
 			var farmVM = new FarmViewModel
 			{
 				Farms = new SelectList(await farmQuery.Distinct().ToListAsync()),
-				Oranges = await oranges.ToListAsync()
+				Oranges = await oranges.ToListAsync(),
+				// NEED THIS LINE to make select list stay on selected item
+				// See Orange.cs for more detailss
+				SelectedFarm = selectedFarm
 			};
 
 			return View(farmVM);
@@ -54,8 +61,7 @@ namespace OrangeJuice.Controllers
 				return NotFound();
 			}
 
-			var orange = 
-				await _context.Orange.FirstOrDefaultAsync(m => m.Id == id);
+			var orange = await _context.Orange.FirstOrDefaultAsync(m => m.Id == id);
 
 			if (orange == null)
 			{
@@ -78,6 +84,7 @@ namespace OrangeJuice.Controllers
 		[ValidateAntiForgeryToken]
 		public async Task<IActionResult> Create([Bind("Id,Name,Farm,HarvestDate,Weight,Juiciness")] Orange orange)
 		{
+			// ModelState.IsValid checks any validation rules added to Orange.cs
 			if (ModelState.IsValid)
 			{
 				_context.Add(orange);
